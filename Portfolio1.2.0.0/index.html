@@ -93,7 +93,38 @@
             <div class="row">
                 <div class="col-md-3 col-centered">
                     <div class="thumbnail">
-                        <img src="img\portfolio\dreams-preview.jpg" alt="lights" />
+                        <img  id="myImg" src="img\portfolio\dreams.png" alt="lights" />
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" src="img\portfolio\dreams.png" id="img01">
+                            <div id="caption"></div>
+                        </div>
+
+                        <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+                        </script>
+
                         <h4>Lights</h4>
                         <p>  Lorem ipsum dolor sit amet </p>
                     </div>
@@ -102,7 +133,7 @@
                 <div class="col-md-3 col-centered">
                     <div class="thumbnail">
                         <img src="img\portfolio\dreams-preview.jpg" alt="lights" />
-                        <h4>golden</h4>
+                        <h4 id="testo">golden</h4>
                         <p>  Lorem ipsum dolor sit amet </p>
                     </div>
                 </div>
@@ -147,8 +178,6 @@
             </div>
 
         </div>
-            
-
 
 
 </body>
