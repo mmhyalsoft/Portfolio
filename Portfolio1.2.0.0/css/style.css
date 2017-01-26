@@ -1,0 +1,160 @@
+﻿body {
+    margin: 0;
+}
+.sec1 {
+
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% !important;
+    height: 800px !important;
+    /*padding: 300px 100px 300px 100px;  mantenere top+bottmo = 600 px */
+    background-position: 50% 30%; /* mi decide la posizione della foto del background */
+    display: inline-block;
+}
+
+@media screen and (max-width:750px){
+    .sec1{
+        background-image: url(../img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100% !important;
+        height: 400px !important;
+        /*padding: 300px 100px 300px 100px;  mantenere top+bottmo = 600 px */
+        background-position:center;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-device-width: 359px) {
+    .sec1 {
+        background-image: url(../img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100% !important;
+        height: 200px !important;
+        /*padding: 300px 100px 300px 100px;  mantenere top+bottmo = 600 px */
+        background-position: center;
+        display: inline-block;
+    }
+}
+
+.text_sec1 {
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+
+.welcome1_1 {
+    border: 0;
+    margin: 0;
+    margin-top: 20%;
+}
+
+.welcome1_2 {
+    border:0;
+    margin:0;
+    margin-top: 5%;
+    font-weight: 900;
+    font-size: 56px;
+}
+
+
+/* SEC 2 skills css settings */
+
+.sec2 {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    border:0;
+    margin:0;
+    margin-bottom: 100px;
+    
+}
+
+.sec2 img{
+    width: 40%;
+    height: 50%;
+}
+
+.sec2 h1 {
+    margin-top:8%;
+}
+
+.sec2 h2 {
+    margin-top:2%;
+    margin-bottom: 5%;
+}
+
+.sec2 h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sec2 h4 {
+    color: green;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin: 10px;
+}
+
+.material-icons {
+    font-size: 80px;
+    background-color: rgba(48, 47, 47, 0.6);
+    padding: 18px 18px;
+    border-radius:50%;
+    color: white;
+}
+
+/* SEC 3 PORTFOLIO */
+
+.sec3 {
+    background-color: rgba(128, 128, 128, 0.6);
+    margin:0;
+    border:0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.sec3 h1 {
+    margin:0;
+    padding:0;
+    margin-top:8%; 
+}
+
+.sec3 h2 {
+    margin-top:2%;
+    margin-bottom: 5%;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.thumbnail h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    margin-top: 20px;
+    color: black;
+}
+
+.thumbnail p {
+    margin-top: 3%;
+}
