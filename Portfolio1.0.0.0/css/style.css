@@ -1,0 +1,64 @@
+﻿.sec1{
+    margin:0;
+    font-size: 30px;
+    color: white;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 700px;
+    background-size: cover;
+}
+
+h1 {
+    font-family:sans-serif;
+}
+
+.welcome {
+    font-size: 50px;
+    font-style: italic;
+    padding-top: 250px;
+}
+
+.meet_you {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    height: 100px;
+    display: inline-block;
+    transform : scale(1,1.5);
+    -webkit-transform:scale(1,1.5); /* Safari and Chrome */
+    -moz-transform:scale(1,1.5); /* Firefox */
+    -ms-transform:scale(1,1.5); /* IE 9+ */
+    -o-transform:scale(1,1.5); /* Opera */
+}
+
+.skill {
+    margin: 0;
+    padding: 50px;
+}
+
+.project {
+    background-color: lightgray;
+    margin:0;
+    padding: 50px;
+}
+
+.thumbnail {
+
+    padding: 0px 0px 30px 0px;
+    border:none;
+    border-radius: 0;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.text_under_thumbnail {
+    padding-top: 24px;
+}
