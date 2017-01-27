@@ -9,6 +9,12 @@ function add() {
     alert("funziona!");
 }
 
+
+
+
+var apperead = 0;
+var apperead2 = 0;
+
 // wait for my document to load up before start with this code
 $(document).ready(function () {
 
@@ -25,5 +31,31 @@ $(document).ready(function () {
     $('#test_js2').on('click', function() {
         $('#test_js3').toggle();
     });
+
+
+  
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = 900;             // set to whatever you want it to be
+        var scroll_pos_test2 = 600;
+
+
+        console.log(y_scroll_pos);
+        console.log(apperead);
+        console.log(apperead2);
+
+        if ((y_scroll_pos > scroll_pos_test) && (apperead === 0)) {
+            $('#test_js4').show(600);
+            apperead = 1; // it works just once.
+        }
+
+       
+        if ((y_scroll_pos > scroll_pos_test2) && (apperead2 === 0)) {
+            $('#test_js5').show(600);
+            apperead2 = 1; // it works just once.
+        } 
+    });
+
+    
 });
 

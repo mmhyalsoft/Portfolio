@@ -112,6 +112,10 @@
     color: white;
 }
 
+.test_hide {
+    display:none;
+}
+
 /* SEC 3 PORTFOLIO */
 
 .sec3 {
