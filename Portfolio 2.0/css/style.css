@@ -53,38 +53,70 @@
     font-weight: 600;
 }
 
-.about h2 {
-    margin:0;
-    border:0;
-    font-family: 'Lobster', sans-serif;
-    font:italic;
-    font-weight: 700;
-    font-size: 30px;
-    margin-top: 180px;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-
 .about h3 {
+    margin-top: 150px;
     font-weight:700;
     font-size: 32px;
     color: rgba(0, 0, 0, 0.7);
-    margin-top: 20px;
 }
 
 .about h4 {
+    margin:0;
     font-weight: 600;
     font-size: 24px;
-    color: rgba(0, 13, 160, 1);
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .about p {
     margin-top: 20px;
     display: inline-block;
     width: 80%;
+    margin-bottom: 40px;
 }
 
 
+
+
+/* --- SKILLS --- */
+
+.skills {
+    margin:0;
+    border:0;
+    color: rgba(39, 37, 37, 0.6);
+    font-weight: 600;
+    background-color:rgba(193, 193, 193, 0.2);
+}
+
+.skills h3 {
+    margin-top: 50px;
+    font-weight:700;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.skills h4 {
+    margin:0;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin: 10px;
+}
+
+.material-icons {
+    border-radius: 50%;
+    font-size: 80px;
+    background-color: rgb(0, 2, 53);
+    padding: 18px 18px;
+    color:white;
+}
 
 
