@@ -1,2 +1,82 @@
 ﻿body {
+    margin:0;
+    border:0;
+    background-color:rgba(193, 193, 193, 0.2);
+    font-family: 'Lato', sans-serif;
 }
+
+
+/* --- HEAD --- */
+
+.head {
+    background-color: rgba(14, 0, 77, 0.9);
+    color: white;
+    height: 500px;       /*40 vh altezza del 40% rispetto alla dimensione della finestra*/
+    width: 100%;
+}
+
+.head h1 {
+    border:0;
+    margin:0;    
+    border-bottom: 1pt solid white;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 40vh;
+}
+
+.head h2 {
+    margin:0;
+    border:0;
+    font-size: 24px;   
+}
+
+#photo_profile {
+    margin:0;
+    border:0;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 10px solid white;
+    width: 250px;
+    height: 250px;
+
+}
+
+
+
+/* --- ABOUT --- */
+
+.about {
+    margin:0;
+    border:0;
+    color: rgba(39, 37, 37, 0.8);
+    font-weight: 600;
+}
+
+.about h2 {
+    margin:0;
+    border:0;
+    font-family: 'Lobster', sans-serif;
+    font:italic;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 180px;
+    color: black;
+}
+
+
+.about h3 {
+    font-weight:700;
+    font-size: 32px;
+}
+
+.about h4 {
+    font-weight: 400;
+    color: rgba(0, 13, 160, 1);
+
+}
+
+
+
+
+
