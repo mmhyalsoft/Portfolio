@@ -36,21 +36,21 @@ $(document).ready(function () {
   
     $(window).on('scroll', function () {
         var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test = 900;             // set to whatever you want it to be
-        var scroll_pos_test2 = 600;
+        var scroll_pos_test = 300;             // set to whatever you want it to be
+        var scroll_pos_test2 = 650;
 
 
         console.log(y_scroll_pos);
         console.log(apperead);
         console.log(apperead2);
 
-        if ((y_scroll_pos > scroll_pos_test) && (apperead === 0)) {
+        if ((y_scroll_pos > scroll_pos_test2) && (apperead === 0)) {
             $('#test_js4').show(600);
             apperead = 1; // it works just once.
         }
 
        
-        if ((y_scroll_pos > scroll_pos_test2) && (apperead2 === 0)) {
+        if ((y_scroll_pos > scroll_pos_test) && (apperead2 === 0)) {
             $('#test_js5').show(600);
             apperead2 = 1; // it works just once.
         } 
