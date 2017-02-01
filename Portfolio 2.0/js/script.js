@@ -6,8 +6,8 @@ $(document).ready(function () {
 
     $(window).on('scroll', function () {
         var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test = 2000;             // set to whatever you want it to be
-        var scroll_pos_test2 = 2300;
+        var scroll_pos_test = 1000;             // set to whatever you want it to be
+        var scroll_pos_test2 = 1300;
 
 
 
