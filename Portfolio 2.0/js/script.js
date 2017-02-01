@@ -1,37 +1,29 @@
 // JavaScript source code
+var apperead = 0;
+var apperead2 = 0;
+
+$(document).ready(function () {
+
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = 2000;             // set to whatever you want it to be
+        var scroll_pos_test2 = 2300;
 
 
-(function () {
 
-    'use strict';
+        console.log(y_scroll_pos);
+        console.log(apperead);
 
-    // define variables
-    var items = document.querySelectorAll(".timeline li");
 
-    // check if an element is in viewport
-    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-    function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function callbackFunc() {
-        for (var i = 0; i < items.length; i++) {
-            if (isElementInViewport(items[i])) {
-                items[i].classList.add("in-view");
-            }
+        if ((y_scroll_pos > scroll_pos_test) && (apperead === 0)) {
+            $('.timeline-left').show(600);
+            apperead = 1; // it works just once.
         }
-    }
+        if ((y_scroll_pos > scroll_pos_test2) && (apperead2 === 0)) {
+            $('.timeline-inverted').show(600);
+            apperead2 = 1; // it works just once.
+        }
+    });
 
 
-    // listen for events
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("resize", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
-
-})();
+});
